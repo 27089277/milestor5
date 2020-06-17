@@ -1,6 +1,6 @@
 node {
    stage('git clone') { // for display purposes  
-			checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [[$class:'CheckoutOption',timeout:90],[$class:'CloneOption',depth:1,noTags:false,reference:'',shallow:true,timeout:90]], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '1b99f8a5-741e-497c-8c2e-c830fb818feb', url: 'https://github.com/xiaolong199011/eMart_backend/']]])
+			checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [[$class:'CheckoutOption',timeout:90],[$class:'CloneOption',depth:1,noTags:false,reference:'',shallow:true,timeout:90]], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '1b99f8a5-741e-497c-8c2e-c830fb818feb', url: 'https://github.com/27089277/milestor5/eMart_backend/']]])
    }
    stage('Build') {
            //env.JAVA_HOME="${tool 'jdk1.8.0_231'}"
